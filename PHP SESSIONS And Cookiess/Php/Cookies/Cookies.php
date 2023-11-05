@@ -10,27 +10,24 @@
     <h1>Cookies</h1>
 </body>
 </html>
-<?php
-// Set the "userList" and "userCourse" cookies with values and expiration time
+    <?php
+    // Assign values to the 'userList' and 'userCourse' cookies and specify when they should expire.
+    // Establish the 'userList' cookie's value.
+    // Define the value for the 'userCourse' cookie
+    $userName = "Malupa Jhon Mark L.";
+    $userCourse = "IT-NT";
 
-// Define the value for the "userList" cookie
-$userName = "Malupa Jhon Mark L.";
+    // Calc the expiration time (3.5 hours from the current time)
+    $expiration_time = time() + 3.5 * 3600; // 3.5 hours in seconds(3600)
 
-// Define the value for the "userCourse" cookie
-$userCourse = "IT-NT";
+   // Set the value and expiration time of the "userList" cookie.
+    setcookie("userList", $userName, $expiration_time);
 
-// Calculate the expiration time (3.5 hours from the current time)
-$expiration_time = time() + 3.5 * 3600; // 3.5 hours in seconds
+    // Set the 'userCourse' cookie with its value and expired time
+    setcookie("userCourse", $userCourse, $expiration_time);
 
-// Set the "userList" cookie with its value and expiration time
-setcookie("userList", $userName, $expiration_time);
-
-// Set the "userCourse" cookie with its value and expiration time
-setcookie("userCourse", $userCourse, $expiration_time);
-
-// Display a message to confirm that the cookies have been set
-echo "Cookies have been set with the values 'ODLANYER R. LIAQUEN' and 'IT' and will expire in 3.5 hours.";
-?>
-
+    // Show a message to verify that cookies have been set.
+    echo "The cookies have been configured with the values 'Malupa Jhon Mark L.' and 'IT NT'. Will automatically expire after 3.5 hours.";
+    ?>
 </body>
 </html>
