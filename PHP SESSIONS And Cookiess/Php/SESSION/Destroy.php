@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Session</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destroy</title>
 </head>
-<h1> Destroy </h1>
 <body>
+
+    <h1>Destroy</h1>
+    
+</body>
+</html>
 <?php
 // Start a session
 
@@ -22,7 +28,7 @@ session_unset();
 session_destroy();
 
 // Display a message to confirm that the session has been destroyed and all session variables have been unset
-echo "Session has been destroyed, and all session variables have been unset.";
+echo "Session destroyed and variables unset successfully.";
 ?>
 </body>
 </html>
