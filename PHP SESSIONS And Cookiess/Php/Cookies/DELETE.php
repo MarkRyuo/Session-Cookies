@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cookies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Delete</title>
 </head>
-<h1> Delete </h1>
 <body>
+    <h1>Delete</h1>
+</body>
+</html>
 <?php
-// Delete the "userList" and "userCourse" cookies
-
-// Set the "userList" cookie's expiration time to the past (1 hour ago) to delete it
+// Get Delete of the 'userCourse' and 'userList' cookies.
+// Remove the 'userList' cookie, set its expiration time to the past (one hour ago).
 setcookie("userList", "", time() - 3600);
 
 // Set the "userCourse" cookie's expiration time to the past (1 hour ago) to delete it
