@@ -9,8 +9,6 @@
 
     <h1>Destroy</h1>
     
-</body>
-</html>
 <?php
 // Start a session
 
@@ -18,10 +16,9 @@
 session_start();
 
 // Unset all session variables
-
 // Remove all session variables
-session_unset();
 
+session_unset();
 // Destroy the session
 
 // Destroy the session, including all data associated with it
